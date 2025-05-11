@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Ro'yxatdan o'tish</title>
+    <style>
+        body { font-family: Arial; background-color: #f4f4f4; }
+        .container {
+            width: 350px; margin: 100px auto; padding: 20px;
+            background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%; padding: 10px; margin: 10px 0;
+            border: 1px solid #ccc; border-radius: 5px;
+        }
+        button {
+            width: 100%; padding: 10px;
+            background-color: #007bff; color: white;
+            border: none; border-radius: 5px; font-size: 16px;
+        }
+        a { display: block; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Ro'yxatdan o'tish</h2>
+        <form method="post" action="/register">
+            <input type="text" placeholder="name" name="name">
+            <input type="text" name="username" placeholder="Foydalanuvchi nomi" required>
+            <input type="password" name="password" placeholder="Parol" required>
+            <input type="password" name="confirm_password" placeholder="Parolni tasdiqlang" required>
+            <input type="hidden" name="role" value="user" >
+            <button type="submit">Ro'yxatdan o'tish</button>
+        </form>
+        <a href="/login">Allaqachon ro'yxatdan o'tganmisiz?</a>
+    </div>
+</body>
+</html>
+

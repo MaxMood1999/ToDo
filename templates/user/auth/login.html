@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body { font-family: Arial; background-color: #f4f4f4; }
+        .container {
+            width: 350px; margin: 100px auto; padding: 20px;
+            background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%; padding: 10px; margin: 10px 0;
+            border: 1px solid #ccc; border-radius: 5px;
+        }
+        button {
+            width: 100%; padding: 10px;
+            background-color: #28a745; color: white;
+            border: none; border-radius: 5px; font-size: 16px;
+        }
+        a { display: block; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kirish</h2>
+        <form method="post" action="/login">
+            <input type="text" name="username" placeholder="Foydalanuvchi nomi" required>
+            <input type="password" name="password" placeholder="Parol" required>
+            <button type="submit">Kirish</button>
+        </form>
+        <a href="/register">Ro'yxatdan o'tish</a>
+    </div>
+</body>
+</html>
